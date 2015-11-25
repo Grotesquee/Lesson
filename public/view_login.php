@@ -23,7 +23,9 @@ echo '<form method="POST" action="http://localhost:8000">
 </div>
 <input type="submit" class="btn btn-default" value="Send"/>
 </form>';
+enter();
 
+echo '<a href="/src/reg.php">Зарегистрируйтесь</a>';
 
 echo '</html>';
 

@@ -3,7 +3,8 @@
 /* require(постоянно), require_once(один раз), include, include_once - присоединяют файл*/
 
 require_once 'src/validate.php';
-require_once 'public/view.php';
+require_once 'public/view_login.php';
+
 
 //Вынести валидацию логина в отдельную функцию, переместить в файл validate.php и добавить проверку на пустоту
 

@@ -24,9 +24,30 @@ $shelf = array(
     )
 );
 
+
+
 echo '<pre>';
 var_dump($shelf);
 newString();
+
+
+echo $shelf['book1']['page1']['string1'] . '<br/>';
+echo $shelf['book1']['page1']['string2'] . '<br/>';
+echo $shelf['book1']['page2']['string1'] . '<br/>';
+echo $shelf['book1']['page2']['string2'] . '<br/>';
+echo $shelf['book2']['page1']['string1'] . '<br/>';
+echo $shelf['book2']['page1']['string2'] . '<br/>';
+echo $shelf['book2']['page2']['string1'] . '<br/>';
+echo $shelf['book2']['page2']['string2'] . '<br/>';
+
+foreach ($shelf as $bookName => $pages) {
+    foreach ($pages as $pageName => $strings) {
+        foreach ($strings as $stringName => $string) {
+            echo ' Book: '.$bookName.' Page: '.$pageName.' String: '.$stringName.' Text: '.$string.'<br/>';
+        }
+    }
+}
+
 
 $shelf2 = array(
     array (
@@ -96,10 +117,10 @@ $chars = array(
     array('X', 'O', 'X', 'X', 'O'),
     array('O', 'O', 'X', 'O')
 );
-foreach ($chars as $scope) {
-    var_dump($scope);
-}
-
+//foreach ($chars as $scope) {
+//    var_dump($scope);
+//}
+var_dump($chars);
 newString();
 
 

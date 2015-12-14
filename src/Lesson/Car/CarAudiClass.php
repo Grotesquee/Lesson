@@ -10,7 +10,7 @@ class CarAudiClass implements CarInterface        /*extends - наследова
         return $this->carName;
     }
 
-    public function speed()
+    public function speed($speed)
     {
         return 80;
     }

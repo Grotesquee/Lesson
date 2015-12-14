@@ -6,6 +6,6 @@ namespace Lesson\Car;
 
 interface CarInterface
 {
-    public function speed();
+    public function speed($speed);
     public function model();
 }

@@ -76,7 +76,7 @@ if ($obj3 instanceof \Lesson\Car\CarInterface) {
 /*в папке \src создать новый namespace, подключить его в composer.json, назвать его Validator.
 создать ValidateIterface, в нем создать публичный метод isValid($value) (после проверки метод должен вернуть true or false )
  и создать 2 класса, имплементирующие интерфейс ValidatorIntClass, ValidatorStringClass
-
+//php composer.phar dump-autoload
 
 ValidatorIntClass должен проверять, что $value является числом
 ValidatorStringClass должен проверять, что $value является строкой

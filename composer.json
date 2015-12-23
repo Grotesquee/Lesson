@@ -14,7 +14,9 @@
   },
   "autoload": {
     "psr-0": {
-      "Lesson": "src/"
+      "Validator": "src/"
     }
   }
 }
+
+
